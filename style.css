@@ -106,7 +106,13 @@ aside{
     height: 20vmin;
     background-color: black;
     border: blue 3px solid;
+    transition: background-color .36s;
 } 
+
+.nav:active{
+    background-color: blue;
+
+}
 
 #up{
     bottom: 30%;
