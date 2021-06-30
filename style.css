@@ -1,0 +1,78 @@
+body{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#game-board{
+    background-color: black;
+    width: 80vmin;
+    height: 80vmin;
+    border: .25vmin solid blue;
+    position: absolute;
+    top: 10%;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+
+.snake{
+    background-color: inherit;
+    border: inherit;
+    border-radius: 100px;
+}
+
+#snakehead{
+    background-color: blue;
+}
+
+.food{
+    background-color:  #15ff00;
+    border: .10vmin #0c4e06 solid
+}
+
+.restart{
+    text-align: center;
+    background-color: blue;
+    width: 70vmin;
+    height: 30vmin;
+    border: #248b8b solid 5px;
+    border-radius: 7px;
+}
+
+.yesButton{
+    background-color: black;
+    height: 6vmin;
+    width: 20vmin;
+    color: #1ad61a;
+    position: absolute;    
+    left: 20%;
+    text-align: center;
+    font-size: 5vmin;
+    transition: background-color .4s;
+   
+}
+
+.yesButton:hover{
+    background-color: white;
+    color: black;
+}
+
+.noButton{
+    text-align: center;
+    font-size: 5vmin;
+    background-color: black;
+    height: 6vmin;
+    width: 20vmin;
+    color: #ff0000;
+    position: absolute;    
+    left: 50%;
+    transition: background-color .4s;
+}
+.noButton:hover{
+    background-color: white;
+    color: black;
+
+}
