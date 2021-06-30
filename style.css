@@ -102,21 +102,21 @@ aside{
 } 
 
 #up{
-    bottom: 20%;
+    bottom: 25%;
     left: 40%;
 }
 
 #right{
-    bottom: 10%;
-    left:59%
+    bottom: 15%;
+    left:58%
 }
 
 #down{
-    bottom:0%;
+    bottom:5%;
     left: 40%
 }
 
 #left{
     left:22%;
-    bottom: 10%
+    bottom: 15%
 }
