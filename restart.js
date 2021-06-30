@@ -4,7 +4,7 @@ export function request(gameBoard){
     block.classList.add('restart')
 
     let heading = document.createElement('h2');
-    heading.style.fontSize = 'x-large';
+    heading.style.fontSize = '5vmin';
     heading.style.color = 'beige';
     heading.innerText = 'you died, Want to try again?';
     block.appendChild(heading);
