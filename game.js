@@ -4,6 +4,7 @@ import {update as updateFood, draw as drawFood} from './food.js'
 import {outsideGrid} from './grid.js'
 import { request } from './restart.js';
 
+console.log("Hey! why are you digging through my guts!");
 let lastRenderTime = 0;
 let gameBoard = document.getElementById('game-board')
 let gameOver = false;

@@ -1,16 +1,21 @@
 import { getInputDirection } from "./input.js";
 
-export const SNAKE_SPEED = 5;
+export let SNAKE_SPEED = 5;
 let newSeg = 0
 const snakeBody = [{x: 11, y: 11}]
-
+let lastLength = 1
+let speecIncCount = 0
 export function update(){
     const inputDirection = getInputDirection()
     addSegments();
+    if(snakeBody.length-lastLength===5 && speecIncCount !=5)    {
+        SNAKE_SPEED++;
+        speecIncCount++
+        lastLength = snakeBody.length
+    }
 
     for (let i = snakeBody.length - 2; i >= 0  ; i--) {
-        snakeBody[i+1] = {...snakeBody[i]}
-        
+        snakeBody[i+1] = {...snakeBody[i]}        
     }
 
     snakeBody[0].x += inputDirection.x;
