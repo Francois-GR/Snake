@@ -29,7 +29,14 @@ aside{
 #score{
     color: whitesmoke;
     font-size: 7vmin;
+   
 
+}
+
+#record{
+    color: whitesmoke;
+    font-size: 7vmin;
+    margin-left: 7vmin;
 }
 .snake{
     background-color: inherit;
