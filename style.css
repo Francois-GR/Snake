@@ -109,7 +109,7 @@ aside{
     transition: background-color .36s;
 } 
 
-.nav:active{
+.nav:active:hover{
     background-color: blue;
 
 }
